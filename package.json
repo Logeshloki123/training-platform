@@ -1,0 +1,36 @@
+{
+  "name": "cognimates-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:sass-watch\" \"npm:dev-node-server\"",
+    "prod-node-server": "node index.js",
+    "dev-node-server": "nodemon index.js --http",
+    "sass-build": "node-sass scss/style.scss -o static/css/",
+    "sass-watch": "node-sass --watch scss/style.scss -o static/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "body-parser": "^1.20.0",
+    "clarifai": "^2.9.1",
+    "cors": "^2.8.5",
+    "csv": "^6.0.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-busboy": "^8.0.2",
+    "express-handlebars": "^6.0.6",
+    "localforage": "^1.10.0",
+    "minimist": "^1.2.6",
+    "mkdirp": "^1.0.4",
+    "request": "^2.88.0",
+    "whirlpool": "0.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
