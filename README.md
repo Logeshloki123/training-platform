@@ -1,4 +1,4 @@
-### cognimates-training
+### training-platform
 Platform where kids train their own AI models 
 
 #### setup
