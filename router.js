@@ -5,20 +5,20 @@ const router = express.Router()
 
 router.get('/', function (req, res) {
     res.render('index', {
-      title: 'Cognimates, Home'
+      title: 'training-platform'
     });
 });
 
 router.get('/home', function (req, res) {
     res.render('index', {
-      title: 'Cognimates, Home'
+      title: 'training-platform'
     });
 });
 
 //begin text routes
 router.get('/text_home', (req, res) => {
   res.render('models/text/text_classifiers', {
-      title: 'Cognimates, Train a text model, Home'
+      title: 'training-platform-model'
     })
 })
 
